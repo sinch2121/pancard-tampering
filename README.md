@@ -1,4 +1,5 @@
 PAN Card Tampering Detection Using Computer Vision
+
 Overview
 The PAN Card Tampering Detection project is a computer vision-based solution designed to help organizations verify the authenticity of PAN cards provided by their employees. This project enables organizations to check if the PAN card provided by an employee matches an original reference image, offering instant results without the need for external verification systems.
 
