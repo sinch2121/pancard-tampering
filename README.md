@@ -1,12 +1,15 @@
 PAN Card Tampering Detection Using Computer Vision
 
 Overview
+
 The PAN Card Tampering Detection project is a computer vision-based solution designed to help organizations verify the authenticity of PAN cards provided by their employees. This project enables organizations to check if the PAN card provided by an employee matches an original reference image, offering instant results without the need for external verification systems.
 
 Objective
+
 Organizations typically verify PAN card details through online systems, often linked with Aadhaar card databases. This project simplifies the process by providing a direct, automated way to identify tampered PAN cards using image comparison techniques.
 
 Key Features
+
 1. Accepts user-provided PAN card images for comparison.
 2. Resizes and formats images to match standard requirements.
 3. Applies computer vision techniques to analyze and compare images.
@@ -15,6 +18,7 @@ Key Features
 6. The project processes two images: a reference (original) PAN card image and the PAN card image provided by the employee. By performing a series of image processing steps, the application checks the similarity between the images and determines if any tampering has occurred.
 
 Project Workflow
+
 1. Get Images from User
 The system prompts the user to upload an image of the original PAN card and the PAN card provided for verification.
 The input images are read using Python image-processing libraries such as OpenCV.
@@ -40,17 +44,19 @@ These contours represent areas in the image that may differ from the original an
 A bounding rectangle is drawn around detected contours to indicate areas that may have been altered.
 This visualization helps identify specific regions where tampering may have occurred.
 9. Display Results
+
 The project plots and displays the following:
 Original image
 Tampered image (uploaded by the user)
 Thresholded image showing differences
 Image with contours and bounding rectangles
 The differences are visually represented to help users see where potential tampering has occurred.
-10. Compare and Output Similarity Score
+11. Compare and Output Similarity Score
 The images are compared, and a similarity score is generated to indicate the level of tampering.
 A high similarity score close to 1 suggests minimal or no tampering, while lower scores indicate discrepancies.
 
 Libraries and Technologies Used
+
 Python: The primary programming language used for the project.
 OpenCV: Used for image processing and analysis.
 imutils: Simplifies basic image processing functions.
@@ -58,10 +64,12 @@ PIL import Image - for downloading images
 import requests - for pulling necessary requests from URLs
 
 How to Run the Project
+
 Prerequisites
 Ensure you have Anaconda installed to create and manage your environment.
 
 Installation Steps
+
 Clone the Repository
 
 bash
